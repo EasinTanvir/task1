@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 export default {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -8,8 +9,17 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        headerBg: "#252525",
+        customBackground: "#ffffff29",
+        buttonBg: "#008AC5",
+        whiteTransparent: "rgba(255, 255, 255, 0.16)",
+        textColor: "#009de0",
+        skyBlue: "#ebf7fd",
+      },
+      backgroundImage: {
+        bannerImage: "url('/banner.avif')",
+        gradientOverlay:
+          "linear-gradient(180deg, rgba(0,0,0,0.61) 0%, rgba(0,0,0,0.41) 100%)",
       },
     },
   },
