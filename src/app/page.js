@@ -7,10 +7,12 @@ const HomePage = () => {
   return (
     <div>
       <Banner />
+      <h1>Gret</h1>
 
-      {dummyData.map((item) => (
-        <Image src={item.image} width={400} height={400} />
-      ))}
+      <div className="space-x-4 custom-container flex">
+        <div className="w-64 border border-red-400">fd</div>
+        <div className="flex-1 border border-rose-800">great</div>
+      </div>
     </div>
   );
 };

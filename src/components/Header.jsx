@@ -26,33 +26,37 @@ const Header = () => {
         >
           Wolt
         </h1>
-        <div className="flex items-center gap-2 md:mt-0 mt-3">
-          <button>
-            <IoLocation
-              size={20}
-              className={`${
-                scroll || selectSearch ? "text-textColor" : "text-white"
-              }`}
-            />
-          </button>
-          <div className="flex items-center gap-2">
+        {!selectSearch && (
+          <div className="flex items-center gap-2 md:mt-0 mt-3">
             <button
               className={`${
-                scroll || selectSearch ? "text-textColor" : "text-white"
-              }`}
+                scroll ? "bg-skyBlue" : "bg-white"
+              } bg-opacity-30 backdrop-blur-md rounded-full w-8 h-8 flex items-center justify-center`}
             >
-              Kerava
+              <IoLocation
+                size={18}
+                className={`${scroll ? "text-textColor" : "text-white"} z-20`}
+              />
             </button>
-            <button>
-              <RiArrowDropDownLine
-                size={20}
+            <div className="flex items-center gap-2">
+              <button
                 className={`${
                   scroll || selectSearch ? "text-textColor" : "text-white"
                 }`}
-              />
-            </button>
+              >
+                Kerava
+              </button>
+              <button>
+                <RiArrowDropDownLine
+                  size={20}
+                  className={`${
+                    scroll || selectSearch ? "text-textColor" : "text-white"
+                  }`}
+                />
+              </button>
+            </div>
           </div>
-        </div>
+        )}
       </div>
 
       <div

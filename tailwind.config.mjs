@@ -14,7 +14,7 @@ export default {
         buttonBg: "#008AC5",
         whiteTransparent: "rgba(255, 255, 255, 0.16)",
         textColor: "#009de0",
-        skyBlue: "#ebf7fd",
+        skyBlue: "#ccecf9",
       },
       backgroundImage: {
         bannerImage: "url('/banner.avif')",
