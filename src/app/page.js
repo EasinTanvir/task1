@@ -1,17 +1,21 @@
-import Banner from "@/components/Banner";
-import { dummyData } from "@/utils/data";
-import Image from "next/image";
 import React from "react";
+
+import Banner from "@/components/Banner";
+import Orders from "@/components/orders/Orders";
+import AllItems from "@/components/allitmes/AllItems";
 
 const HomePage = () => {
   return (
-    <div>
+    <div className="max-w-full min-w-full ">
       <Banner />
-      <h1>Gret</h1>
 
-      <div className="space-x-4 custom-container flex">
-        <div className="w-64 border border-red-400">fd</div>
-        <div className="flex-1 border border-rose-800">great</div>
+      <div className="space-x-4 custom-container flex mt-10">
+        <div className="min-w-[15%] max-w-[15%] ">
+          <AllItems />
+        </div>
+        <div className="min-w-[85%] max-w-[85%]">
+          <Orders />
+        </div>
       </div>
     </div>
   );

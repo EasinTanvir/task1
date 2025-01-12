@@ -7,6 +7,7 @@ import image5 from "../assets/5.avif";
 import image6 from "../assets/6.avif";
 import image7 from "../assets/7.avif";
 import image8 from "../assets/8.avif";
+import percentage from "../assets/deal.avif";
 
 export {
   bannerImage,
@@ -18,4 +19,5 @@ export {
   image6,
   image7,
   image8,
+  percentage,
 };

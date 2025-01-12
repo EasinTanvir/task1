@@ -70,13 +70,13 @@ const Notify = () => {
         </div>
       </div>
       <div className="flex items-center gap-4 flex-1 md:justify-end">
-        <button className="bg-skyBlue text-textColor px-4 py-1.5 rounded-md text-sm flex-center gap-2 font-medium">
+        <button className="bg-skyBlue text-textColor px-4 py-1.5 rounded-md text-sm flex-center gap-2 ">
           <span>
             <BiTask />
           </span>
           <span>Today at 11:45</span>
         </button>
-        <button className="bg-skyBlue text-textColor px-4 py-1.5 rounded-md text-sm flex-center gap-2 font-medium">
+        <button className="bg-skyBlue text-textColor px-4 py-1.5 rounded-md text-sm flex-center gap-2 ">
           <span>
             <FaPersonCirclePlus />
           </span>

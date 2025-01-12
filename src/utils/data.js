@@ -9,7 +9,7 @@ import {
   image8,
 } from "./contant";
 
-export const dummyData = [
+export const ordersData = [
   {
     title: "Wireless Headphones",
     image: image1,
@@ -49,5 +49,104 @@ export const dummyData = [
     title: "Bluetooth Mouse",
     image: image8,
     price: 24.99,
+  },
+];
+
+export const itemsData = [
+  {
+    title: "Wireless Headphones",
+    image: image1,
+  },
+  {
+    title: "Gaming Keyboard",
+    image: image2,
+  },
+  {
+    title: "Smartwatch",
+    image: image3,
+  },
+  {
+    title: "Portable Speaker",
+    image: image4,
+  },
+  {
+    title: "Fitness Tracker",
+    image: image5,
+  },
+  {
+    title: "Wireless Charger",
+    image: image6,
+  },
+  {
+    title: "Laptop Stand",
+    image: image7,
+  },
+  {
+    title: "Bluetooth Mouse",
+    image: image8,
+  },
+  {
+    title: "Wireless Headphones",
+    image: image1,
+  },
+  {
+    title: "Gaming Keyboard",
+    image: image2,
+  },
+  {
+    title: "Smartwatch",
+    image: image3,
+  },
+  {
+    title: "Portable Speaker",
+    image: image4,
+  },
+  {
+    title: "Fitness Tracker",
+    image: image5,
+  },
+  {
+    title: "Wireless Charger",
+    image: image6,
+  },
+  {
+    title: "Laptop Stand",
+    image: image7,
+  },
+  {
+    title: "Bluetooth Mouse",
+    image: image8,
+  },
+  {
+    title: "Wireless Headphones",
+    image: image1,
+  },
+  {
+    title: "Gaming Keyboard",
+    image: image2,
+  },
+  {
+    title: "Smartwatch",
+    image: image3,
+  },
+  {
+    title: "Portable Speaker",
+    image: image4,
+  },
+  {
+    title: "Fitness Tracker",
+    image: image5,
+  },
+  {
+    title: "Wireless Charger",
+    image: image6,
+  },
+  {
+    title: "Laptop Stand",
+    image: image7,
+  },
+  {
+    title: "Bluetooth Mouse",
+    image: image8,
   },
 ];

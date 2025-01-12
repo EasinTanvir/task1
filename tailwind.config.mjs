@@ -15,6 +15,7 @@ export default {
         whiteTransparent: "rgba(255, 255, 255, 0.16)",
         textColor: "#009de0",
         skyBlue: "#ccecf9",
+        blue: "#20A9E4",
       },
       backgroundImage: {
         bannerImage: "url('/banner.avif')",
