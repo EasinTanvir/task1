@@ -11,7 +11,7 @@ const HomePage = () => {
     <div className="max-w-full min-w-full ">
       <Banner />
 
-      <div className="md:space-x-4 custom-container flex md:flex-row flex-col mt-16 ">
+      <div className="md:space-x-4 custom-container flex md:flex-row flex-col md:mt-16 mt-8 ">
         <div className="md:min-w-72 md:max-w-72  ">
           <AllItems />
         </div>

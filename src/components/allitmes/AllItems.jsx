@@ -13,7 +13,7 @@ const AllItems = () => {
     <div className="max-h-[800px] overflow-y-auto relative custom-scrollbar ">
       <SearcBox />
 
-      <div className="flex md:flex-col md:gap-2  flex-row max-w-full overflow-x-auto overflow-y-hidden gap-5   md:p-2 md:mt-0 mt-4">
+      <div className="flex md:flex-col md:gap-2 md:border-none  border-b-[1px] flex-row max-w-full overflow-x-auto overflow-y-hidden gap-5   md:p-2 md:mt-0 mt-4">
         <Buttons />
         {itemsData.map((item, index) => (
           <ItemList

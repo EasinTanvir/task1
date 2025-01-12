@@ -14,14 +14,14 @@ const Header = () => {
   return (
     <div
       ref={headerRef}
-      className={`flex fixed left-0 top-0 w-full justify-between items-center h-20 custom-container z-40 ${
+      className={`flex fixed left-0 top-0 w-full justify-between items-center md:h-20 h-28 custom-container z-40 ${
         scroll || selectSearch ? "bg-white" : ""
       }`}
     >
       <div
-        className={`flex md:w-fit w-10  md:items-center md:flex-row flex-col md:gap-6 md:mt-0  ${
-          selectSearch || scroll ? "mt-0" : "mt-10"
-        }`}
+        className={`flex md:w-fit w-10  md:items-center md:flex-row flex-col md:gap-6 ${
+          !selectSearch ? "md:mt-0 mt-9" : "mt-0"
+        }   `}
       >
         <h1
           className={`md:text-3xl text-xl font-bold italic ${
@@ -30,8 +30,8 @@ const Header = () => {
         >
           Wolt
         </h1>
-        {!selectSearch && !scroll && (
-          <div className="flex items-center gap-2 md:mt-0 mt-3">
+        {!selectSearch && (
+          <div className="flex items-center gap-2 md:mt-0 mt-2">
             <button
               className={`${
                 scroll ? "bg-skyBlue" : "bg-white"
