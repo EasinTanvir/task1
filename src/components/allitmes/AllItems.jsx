@@ -1,19 +1,29 @@
+"use client";
 import React from "react";
 
 import SearcBox from "./SearcBox";
 import Buttons from "./Buttons";
 import ItemList from "./ItemList";
 import { itemsData } from "@/utils/data";
+import { useState } from "react";
 
 const AllItems = () => {
+  const [selectItems, setSelectedItems] = useState();
+
   return (
-    <div className=" max-h-[500px] overflow-y-auto relative custom-scrollbar ">
+    <div className=" max-h-[800px] overflow-y-auto relative custom-scrollbar ">
       <SearcBox />
 
-      <div className="space-y-2 p-2">
+      <div className="flex md:flex-col md:gap-2  flex-row gap-5 border-b-[1px]  md:p-2 md:mt-0 mt-4">
         <Buttons />
         {itemsData.map((item, index) => (
-          <ItemList key={index} {...item} />
+          <ItemList
+            id={index + 1}
+            selectItems={selectItems}
+            setSelectedItems={setSelectedItems}
+            key={index}
+            {...item}
+          />
         ))}
 
         {/* Overlay */}

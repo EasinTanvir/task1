@@ -7,28 +7,25 @@ const Buttons = () => {
   const [discover, setDiscover] = useState(false);
 
   return (
-    <div className={`relative ${discover ? "mb-10" : ""}`}>
-      {/* Discover Button */}
+    <div className={`relative ${discover ? "md:mb-10" : ""}`}>
       <div
         onClick={() => setDiscover(!discover)}
-        className="bg-skyBlue flex items-center gap-2 cursor-pointer text-textColor rounded-md px-2 py-2 w-full mt-4"
+        className="md:bg-skyBlue md:border-none    border-b-[1px]  border-blue flex items-center gap-2 cursor-pointer text-textColor md:rounded-md px-2 py-2.5 w-full md:mt-4"
       >
-        <div className="bg-blue w-8 h-8 rounded-full flex-center">
+        <div className="bg-blue w-8 h-8 rounded-full md:flex-center hidden">
           <LuCloudLightning size={16} className="text-white" />
         </div>
         <button className="text-sm">Discover</button>
       </div>
 
-      {/* Transition Container */}
       <div
         className={`absolute left-0 w-full transition-all duration-300 ${
           discover
             ? "opacity-100 translate-y-0"
             : "opacity-0 -translate-y-2 pointer-events-none"
         }`}
-        style={{ top: "calc(100% + 8px)" }} // Adds spacing between buttons
+        style={{ top: "calc(100% + 8px)" }}
       >
-        {/* Most Ordered Button */}
         <button
           onClick={() => setMostOrder(!mostOrder)}
           className={`${

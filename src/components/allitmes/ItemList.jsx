@@ -1,12 +1,26 @@
 import Image from "next/image";
 import React from "react";
 
-const ItemList = ({ title, image }) => {
+const ItemList = ({ title, image, id, selectItems, setSelectedItems }) => {
+  const isActive = id === selectItems ? true : false;
   return (
-    <div className="flex items-center gap-1 relative min-w-fit">
+    <div
+      onClick={() => setSelectedItems(id)}
+      className={`flex items-center gap-1 relative min-w-fit px-2 py-2 cursor-pointer md:rounded-md ${
+        isActive
+          ? "md:bg-skyBlue  md:border-none  border-b-[1px] border-blue "
+          : ""
+      }`}
+    >
       <ImageCirlce image={image} />
 
-      <h3 className="text-slate-700 text-xs font-semibold">{title}</h3>
+      <h3
+        className={` text-xs font-semibold ${
+          isActive ? "text-blue" : "text-slate-700"
+        } `}
+      >
+        {title}
+      </h3>
     </div>
   );
 };

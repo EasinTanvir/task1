@@ -16,7 +16,9 @@ const Sliders = ({ lists, title, isOrder = false }) => {
       speed={1000}
     >
       <div className="flex justify-between items-center mb-4">
-        <h1 className="text-3xl font-bold text-slate-600">{title}</h1>
+        <h1 className="lg:text-3xl text-xl font-bold text-slate-600">
+          {title}
+        </h1>
         <div className="flex items-center gap-4">
           {isOrder && <span className="text-blue"> See All</span>}
           <SwipperButton />
