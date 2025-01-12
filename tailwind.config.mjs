@@ -16,6 +16,7 @@ export default {
         textColor: "#009de0",
         skyBlue: "#ccecf9",
         blue: "#20A9E4",
+        bodyColor: "#fbfbfb",
       },
       backgroundImage: {
         bannerImage: "url('/banner.avif')",

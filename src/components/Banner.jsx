@@ -45,7 +45,7 @@ export default Banner;
 
 const Notify = () => {
   return (
-    <div className="flex md:flex-row md:justify-between flex-col md:gap-0 gap-4 md:items-end items-center py-4  border-b-2 custom-container">
+    <div className="flex md:flex-row md:justify-between flex-col md:gap-0 gap-4 md:items-end  py-4  border-b-2 custom-container">
       <div className="flex-1">
         <p className="text-xs">
           The store is closed now, but you can still schedule an order for
@@ -69,14 +69,14 @@ const Notify = () => {
           </button>
         </div>
       </div>
-      <div className="flex items-center gap-4 flex-1 md:justify-end">
-        <button className="bg-skyBlue text-textColor px-4 py-1.5 rounded-md text-sm flex-center gap-2 ">
+      <div className="flex items-center gap-4 flex-1 md:justify-end ">
+        <button className="bg-skyBlue text-textColor px-4 py-1.5 rounded-md text-sm flex-center gap-2 md:w-fit w-full ">
           <span>
             <BiTask />
           </span>
           <span>Today at 11:45</span>
         </button>
-        <button className="bg-skyBlue text-textColor px-4 py-1.5 rounded-md text-sm flex-center gap-2 ">
+        <button className="bg-skyBlue text-textColor px-4 py-1.5 rounded-md text-sm flex-center gap-2 md:w-fit w-full">
           <span>
             <FaPersonCirclePlus />
           </span>

@@ -1,16 +1,20 @@
 import React from "react";
 import { BadgeTwo, Badge } from "./Badges";
-import MostOrders from "./MostOrder";
+import { ordersData } from "@/utils/data";
+import OrderItems from "./OrderItems";
+import Sliders from "../Sliders";
 
 const Orders = () => {
   return (
-    <div className="px-6">
-      <div className="space-y-4">
+    <React.Fragment>
+      <div className="space-y-4 md:mt-0 mt-8">
         <Badge />
         <BadgeTwo />
       </div>
-      <MostOrders />
-    </div>
+      <div className="mt-7">
+        <Sliders lists={ordersData} isOrder title="Most ordered" />
+      </div>
+    </React.Fragment>
   );
 };
 

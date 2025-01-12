@@ -14,3 +14,26 @@ body {
     @apply xl:px-16 lg:px-10 sm:px-6 px-2;
   }
 }
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px; /* Reduced scrollbar width */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent; /* No border or background */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #888; /* Scrollbar thumb color */
+  border-radius: 10px; /* Rounded edges for the thumb */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Darker on hover */
+}
+
+/* Firefox-specific styles */
+.custom-scrollbar {
+  scrollbar-width: thin; /* Reduced width */
+  scrollbar-color: #888 transparent; /* Thumb and track colors */
+}

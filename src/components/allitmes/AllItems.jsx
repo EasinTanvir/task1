@@ -7,10 +7,10 @@ import { itemsData } from "@/utils/data";
 
 const AllItems = () => {
   return (
-    <div className="p-2">
+    <div className=" max-h-[500px] overflow-y-auto relative custom-scrollbar ">
       <SearcBox />
 
-      <div className="space-y-2 max-h-[500px] overflow-y-auto relative">
+      <div className="space-y-2 p-2">
         <Buttons />
         {itemsData.map((item, index) => (
           <ItemList key={index} {...item} />

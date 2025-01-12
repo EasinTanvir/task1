@@ -3,12 +3,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 
-import OrderCard from "./OrderCard";
-import SwipperButton from "../SwipperButton";
-
+import SwipperButton from "./SwipperButton";
 import React from "react";
+import CategoryCard from "./categories/CategoryCard";
+import OrderCard from "./orders/OrderCard";
 
-const OrderItems = ({ ordersData }) => {
+const Sliders = ({ lists, title, isOrder = false }) => {
   return (
     <Swiper
       style={{ display: "flex", flexDirection: "column-reverse" }}
@@ -16,20 +16,20 @@ const OrderItems = ({ ordersData }) => {
       speed={1000}
     >
       <div className="flex justify-between items-center mb-4">
-        <h1 className="text-3xl font-bold text-slate-600">Most ordered</h1>
+        <h1 className="text-3xl font-bold text-slate-600">{title}</h1>
         <div className="flex items-center gap-4">
-          <span className="text-blue"> See All</span>
+          {isOrder && <span className="text-blue"> See All</span>}
           <SwipperButton />
         </div>
       </div>
 
-      {ordersData.map((item, i) => (
+      {lists.map((item, i) => (
         <SwiperSlide key={i} className="min-w-72 max-w-72">
-          <OrderCard {...item} />
+          {isOrder ? <OrderCard {...item} /> : <CategoryCard {...item} />}
         </SwiperSlide>
       ))}
     </Swiper>
   );
 };
 
-export default OrderItems;
+export default Sliders;
