@@ -12,10 +12,10 @@ const Banner = () => {
       <div className="w-full h-80 relative custom-container ">
         <Image
           fill
-          objectFit="cover"
-          className="inset-0"
+          className="inset-0 object-cover"
           src="/banner.avif"
           alt="Banner"
+          priority
         />
 
         <div className="absolute inset-0 bg-gradientOverlay z-10"></div>

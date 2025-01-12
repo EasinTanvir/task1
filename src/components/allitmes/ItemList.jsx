@@ -1,5 +1,5 @@
-import Image from "next/image";
 import React from "react";
+import Image from "next/image";
 
 const ItemList = ({ title, image, id, selectItems, setSelectedItems }) => {
   const isActive = id === selectItems ? true : false;
@@ -12,7 +12,7 @@ const ItemList = ({ title, image, id, selectItems, setSelectedItems }) => {
           : ""
       }`}
     >
-      <ImageCirlce image={image} />
+      <ImageCirlce image={image} alt={title} />
 
       <h3
         className={` text-xs font-semibold ${
@@ -27,10 +27,10 @@ const ItemList = ({ title, image, id, selectItems, setSelectedItems }) => {
 
 export default ItemList;
 
-const ImageCirlce = ({ image }) => {
+const ImageCirlce = ({ image, alt }) => {
   return (
     <div className="relative w-9 h-9 bg-white shadow-sm rounded-full  md:flex-center hidden ">
-      <Image width={60} objectFit="cover" src={image} />
+      <Image width={60} src={image} className="object-cover" alt={alt} />
     </div>
   );
 };

@@ -2,12 +2,13 @@
 import React, { useState } from "react";
 import { IoIosArrowUp, IoIosArrowDown } from "react-icons/io";
 import { Collapse } from "@mui/material";
-import { footerData } from "@/utils/data";
 import Image from "next/image";
-import { playstore } from "@/utils/contant";
 import { IoLocationSharp } from "react-icons/io5";
 import { BiWorld } from "react-icons/bi";
 import { MdDarkMode } from "react-icons/md";
+
+import { playstore } from "@/utils/contant";
+import { footerData } from "@/utils/data";
 
 const Footer = () => {
   const [openSections, setOpenSections] = useState({});
@@ -25,7 +26,7 @@ const Footer = () => {
         <div>
           <h3 className=" font-bold  text-4xl mb-2 text-white italic">Wolt</h3>
           <div className=" relative mt-6">
-            <Image width={120} src={playstore} />
+            <Image width={120} src={playstore} alt="footer" />
           </div>
         </div>
         {footerData.map((section, idx) => (
@@ -46,7 +47,7 @@ const Footer = () => {
         <div className="mb-8">
           <h3 className=" font-bold  text-4xl mb-2 text-white italic">Wolt</h3>
           <div className=" relative mt-6">
-            <Image width={120} src={playstore} />
+            <Image width={120} src={playstore} alt="footer" />
           </div>
         </div>
         {footerData.map((section, idx) => (
@@ -100,15 +101,9 @@ const Footer = () => {
         </div>
         <div className="flex md:flex-row flex-col md:gap-12 gap-6 md:items-center md:mt-0 mt-3">
           <div className="flex flex-row flex-wrap  gap-4">
-            <a href="#" className="hover:text-white">
-              Accessibility Statement
-            </a>
-            <a href="#" className="hover:text-white">
-              User Terms of Service
-            </a>
-            <a href="#" className="hover:text-white">
-              Privacy Statement
-            </a>
+            <span className="hover:text-white">Accessibility Statement</span>
+            <span className="hover:text-white">User Terms of Service</span>
+            <span className="hover:text-white">Privacy Statement</span>
           </div>
           <span>© Wolt 2014–2025</span>
         </div>
