@@ -98,8 +98,8 @@ const Footer = () => {
             </span>
           </button>
         </div>
-        <div className="flex gap-12 items-center">
-          <div className="flex space-x-5">
+        <div className="flex md:flex-row flex-col md:gap-12 gap-6 md:items-center md:mt-0 mt-3">
+          <div className="flex flex-row flex-wrap  gap-4">
             <a href="#" className="hover:text-white">
               Accessibility Statement
             </a>

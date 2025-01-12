@@ -19,8 +19,8 @@ const Header = () => {
       }`}
     >
       <div
-        className={`flex items-center md:flex-row flex-col md:gap-6 md:mt-0 mt-10 ${
-          selectSearch || scroll ? "mt-0" : ""
+        className={`flex md:w-fit w-10  md:items-center md:flex-row flex-col md:gap-6 md:mt-0  ${
+          selectSearch || scroll ? "mt-0" : "mt-10"
         }`}
       >
         <h1
@@ -35,10 +35,10 @@ const Header = () => {
             <button
               className={`${
                 scroll ? "bg-skyBlue" : "bg-white"
-              } bg-opacity-30 backdrop-blur-md rounded-full w-8 h-8 flex items-center justify-center`}
+              } bg-opacity-30 backdrop-blur-md rounded-full min-w-8 min-h-8 flex items-center justify-center`}
             >
               <IoLocation
-                size={18}
+                size={16}
                 className={`${scroll ? "text-textColor" : "text-white"} z-20`}
               />
             </button>
@@ -67,8 +67,8 @@ const Header = () => {
         className={`relative border ${
           selectSearch
             ? "w-[65%] border-2 border-textColor"
-            : "md:w-72 border-none"
-        } rounded-xl  py-1 ${
+            : "xl:w-96 border-none"
+        } rounded-xl  py-1.5 ${
           scroll
             ? "bg-gray-200 hover:bg-gray-300"
             : "bg-[#ffffff29] hover:bg-[#ffffff47]"

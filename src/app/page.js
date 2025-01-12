@@ -4,14 +4,14 @@ import Banner from "@/components/Banner";
 import Orders from "@/components/orders/Orders";
 import AllItems from "@/components/allitmes/AllItems";
 import Categories from "@/components/categories/Categories";
-import StoreDetails from "@/components/map/MapContainer";
+import MapContainer from "@/components/map/MapContainer";
 
 const HomePage = () => {
   return (
     <div className="max-w-full min-w-full ">
       <Banner />
 
-      <div className="space-x-4 custom-container flex md:flex-row flex-col mt-16 ">
+      <div className="md:space-x-4 custom-container flex md:flex-row flex-col mt-16 ">
         <div className="md:min-w-72 md:max-w-72  ">
           <AllItems />
         </div>
@@ -22,7 +22,7 @@ const HomePage = () => {
         </div>
       </div>
       <div className="mt-16 custom-container">
-        <StoreDetails />
+        <MapContainer />
       </div>
     </div>
   );

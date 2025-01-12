@@ -156,6 +156,46 @@ export const ordersData = [
     image: image8,
     price: 24.99,
   },
+  {
+    title: "Wireless Headphones",
+    image: image1,
+    price: 99.99,
+  },
+  {
+    title: "Gaming Keyboard",
+    image: image2,
+    price: 79.99,
+  },
+  {
+    title: "Smartwatch",
+    image: image3,
+    price: 199.99,
+  },
+  {
+    title: "Portable Speaker",
+    image: image4,
+    price: 49.99,
+  },
+  {
+    title: "Fitness Tracker",
+    image: image5,
+    price: 59.99,
+  },
+  {
+    title: "Wireless Charger",
+    image: image6,
+    price: 29.99,
+  },
+  {
+    title: "Laptop Stand",
+    image: image7,
+    price: 39.99,
+  },
+  {
+    title: "Bluetooth Mouse",
+    image: image8,
+    price: 24.99,
+  },
 ];
 
 export const categoryData = [
@@ -270,4 +310,12 @@ export const footerData = [
       "Wolt Life",
     ],
   },
+];
+
+export const breadcrumbs = [
+  { label: "Wolt" },
+  { label: "Kerava" },
+  { label: "Stores and groceries" },
+  { label: "K-Market" },
+  { label: "K-Market Keravan Asema" },
 ];

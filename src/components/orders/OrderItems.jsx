@@ -1,12 +1,12 @@
 "use client";
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+
 import "swiper/css";
 import "swiper/css/navigation";
 
 import OrderCard from "./OrderCard";
 import SwipperButton from "../SwipperButton";
-
-import React from "react";
 
 const OrderItems = ({ ordersData }) => {
   return (
