@@ -11,29 +11,28 @@ body {
     @apply flex justify-center items-center;
   }
   .custom-container {
-    @apply xl:px-16 lg:px-10 sm:px-6 px-2;
+    @apply xl:px-16 lg:px-12 sm:px-8 px-4;
   }
 }
 
 .custom-scrollbar::-webkit-scrollbar {
-  width: 4px; /* Reduced scrollbar width */
+  width: 4px;
 }
 
 .custom-scrollbar::-webkit-scrollbar-track {
-  background: transparent; /* No border or background */
+  background: transparent;
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background: #888; /* Scrollbar thumb color */
-  border-radius: 10px; /* Rounded edges for the thumb */
+  background: #888;
+  border-radius: 10px;
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-  background: #555; /* Darker on hover */
+  background: #555;
 }
 
-/* Firefox-specific styles */
 .custom-scrollbar {
-  scrollbar-width: thin; /* Reduced width */
-  scrollbar-color: #888 transparent; /* Thumb and track colors */
+  scrollbar-width: thin;
+  scrollbar-color: #888 transparent;
 }

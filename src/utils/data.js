@@ -224,3 +224,50 @@ export const categoryData = [
     image: image10,
   },
 ];
+
+export const footerData = [
+  {
+    title: "Partner with Wolt",
+    items: ["For couriers", "For merchants", "For affiliates"],
+  },
+  {
+    title: "Company",
+    items: [
+      "About us",
+      "What we stand for",
+      "Jobs",
+      "Sustainability",
+      "Security",
+      "Investors",
+    ],
+  },
+  {
+    title: "Products",
+    items: ["Wolt Drive", "Wolt Market", "Wolt+", "Wolt for Work", "Wolt Ads"],
+  },
+  {
+    title: "Useful links",
+    items: [
+      "Support",
+      "Newsroom",
+      "Contact",
+      "Oiva report",
+      "Speak up",
+      "Promo codes",
+      "Developers",
+      "Product safety recalls",
+    ],
+  },
+  {
+    title: "Follow us",
+    items: [
+      "Blog",
+      "Engineering Blog",
+      "Instagram",
+      "Facebook",
+      "X",
+      "LinkedIn",
+      "Wolt Life",
+    ],
+  },
+];

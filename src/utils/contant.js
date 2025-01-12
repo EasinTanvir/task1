@@ -15,6 +15,7 @@ import image12 from "../assets/23.avif";
 import image13 from "../assets/24.avif";
 import image14 from "../assets/25.avif";
 import image15 from "../assets/26.avif";
+import playstore from "../assets/playstore.png";
 
 import percentage from "../assets/deal.avif";
 
@@ -36,4 +37,5 @@ export {
   image13,
   image14,
   image15,
+  playstore,
 };

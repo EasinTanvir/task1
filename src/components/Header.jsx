@@ -18,7 +18,11 @@ const Header = () => {
         scroll || selectSearch ? "bg-white" : ""
       }`}
     >
-      <div className="flex items-center md:flex-row flex-col md:gap-6">
+      <div
+        className={`flex items-center md:flex-row flex-col md:gap-6 md:mt-0 mt-10 ${
+          selectSearch || scroll ? "mt-0" : ""
+        }`}
+      >
         <h1
           className={`md:text-3xl text-xl font-bold italic ${
             scroll || selectSearch ? "text-slate-700" : "text-white"
@@ -26,7 +30,7 @@ const Header = () => {
         >
           Wolt
         </h1>
-        {!selectSearch && (
+        {!selectSearch && !scroll && (
           <div className="flex items-center gap-2 md:mt-0 mt-3">
             <button
               className={`${

@@ -3,7 +3,7 @@ import { CiSearch } from "react-icons/ci";
 
 const SearcBox = () => {
   return (
-    <div className=" sticky  left-0 top-0  bg-bodyColor z-50">
+    <div className=" sticky  left-0 top-0  bg-bodyColor z-30">
       <div
         className={`relative border w-full rounded-2xl  py-1 bg-gray-200 hover:bg-gray-300 backdrop-blur-[8px] transition-all duration-300 ease-in-out`}
       >

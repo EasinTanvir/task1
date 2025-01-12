@@ -14,7 +14,7 @@ const AllItems = () => {
     <div className=" max-h-[800px] overflow-y-auto relative custom-scrollbar ">
       <SearcBox />
 
-      <div className="flex md:flex-col md:gap-2  flex-row gap-5 border-b-[1px]  md:p-2 md:mt-0 mt-4">
+      <div className="flex md:flex-col md:gap-2  flex-row max-w-full overflow-x-scroll gap-5   md:p-2 md:mt-0 mt-4">
         <Buttons />
         {itemsData.map((item, index) => (
           <ItemList
@@ -25,10 +25,8 @@ const AllItems = () => {
             {...item}
           />
         ))}
-
-        {/* Overlay */}
-        <div className="sticky bottom-0 left-0 right-0 h-10 bg-gradient-to-t from-gray-100 via-white/60 to-transparent pointer-events-none"></div>
       </div>
+      <div className="sticky bottom-0 left-0 right-0 h-14 bg-gradient-to-t from-gray-100 via-white/60 to-transparent pointer-events-none"></div>
     </div>
   );
 };

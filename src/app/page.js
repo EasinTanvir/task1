@@ -4,6 +4,7 @@ import Banner from "@/components/Banner";
 import Orders from "@/components/orders/Orders";
 import AllItems from "@/components/allitmes/AllItems";
 import Categories from "@/components/categories/Categories";
+import StoreDetails from "@/components/map/MapContainer";
 
 const HomePage = () => {
   return (
@@ -19,6 +20,9 @@ const HomePage = () => {
           <Orders />
           <Categories />
         </div>
+      </div>
+      <div className="mt-16 custom-container">
+        <StoreDetails />
       </div>
     </div>
   );

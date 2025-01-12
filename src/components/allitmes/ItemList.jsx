@@ -29,8 +29,8 @@ export default ItemList;
 
 const ImageCirlce = ({ image }) => {
   return (
-    <div className="relative w-12 h-12 bg-white shadow-sm rounded-full  md:flex-center hidden ">
-      <Image width={70} height={70} objectFit="cover" src={image} />
+    <div className="relative w-9 h-9 bg-white shadow-sm rounded-full  md:flex-center hidden ">
+      <Image width={60} objectFit="cover" src={image} />
     </div>
   );
 };
