@@ -41,7 +41,7 @@ const Sliders = ({ lists, title, isOrder = false }) => {
         <h1 className="lg:text-3xl text-xl font-bold text-baseTextColor">
           {title}
         </h1>
-        <div className="flex items-center gap-4">
+        <div className="sm:flex hidden items-center gap-4 ">
           {isOrder && <span className="text-primaryTextColor"> See All</span>}
           <SwipperButton />
         </div>
@@ -50,7 +50,9 @@ const Sliders = ({ lists, title, isOrder = false }) => {
       {lists.map((item, i) => (
         <SwiperSlide
           key={i}
-          className={`${isOrder ? "min-w-72 max-w-72" : "min-w-60 max-w-60"}`}
+          className={`${
+            isOrder ? "sm:max-w-72 max-w-56" : "sm:max-w-60 max-w-48  "
+          }`}
         >
           {isOrder ? <OrderCard {...item} /> : <CategoryCard {...item} />}
         </SwiperSlide>
