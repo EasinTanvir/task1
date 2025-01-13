@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-
 import "swiper/css";
 import "swiper/css/navigation";
 
@@ -39,7 +38,7 @@ const Sliders = ({ lists, title, isOrder = false }) => {
       }}
     >
       <div className="flex justify-between items-center mb-4">
-        <h1 className="lg:text-3xl text-xl font-bold text-slate-600">
+        <h1 className="lg:text-3xl text-xl font-bold text-baseTextColor">
           {title}
         </h1>
         <div className="flex items-center gap-4">

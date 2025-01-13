@@ -15,7 +15,7 @@ const OrderCard = ({ title, image, price }) => {
         <span className="text-primaryTextColor text-sm font-semibold">
           ${price}
         </span>
-        <h3 className=" text-slate-700 font-semibold">{title}</h3>
+        <h3 className=" text-baseTextColor font-semibold">{title}</h3>
       </div>
     </div>
   );

@@ -25,7 +25,7 @@ const Header = () => {
       >
         <h1
           className={`md:text-3xl text-xl font-bold italic ${
-            scroll || selectSearch ? "text-slate-700" : "text-white"
+            scroll || selectSearch ? "text-baseTextColor" : "text-white"
           }`}
         >
           Wolt
@@ -82,13 +82,13 @@ const Header = () => {
       >
         <input
           onFocus={() => setSelectSearch(true)}
-          className="bg-transparent cursor-text text-xs ps-8 text-black outline-none border-none w-full"
+          className="bg-transparent cursor-text text-xs ps-8 text-baseTextColor outline-none border-none w-full"
           placeholder="Search in Wolt"
         />
         <CiSearch
           size={17}
           className={`absolute left-2 top-0 bottom-0 m-auto ${
-            scroll || selectSearch ? "text-slate-700" : "text-white"
+            scroll || selectSearch ? "text-baseTextColor" : "text-white"
           }`}
         />
       </div>
@@ -98,7 +98,7 @@ const Header = () => {
           <div className="space-x-4 md:block hidden">
             <button
               className={`px-3 py-1.5 rounded-md font-semibold ${
-                scroll || selectSearch ? "text-slate-700" : "text-white"
+                scroll || selectSearch ? "text-baseTextColor" : "text-white"
               }`}
             >
               Log in
@@ -116,7 +116,7 @@ const Header = () => {
           onClick={() => setSelectSearch(false)}
           className="bg-gray-200 backdrop-blur-[8px] rounded-full w-8 h-8 flex-center cursor-pointer"
         >
-          <RxCross2 size={20} className="text-slate-700" />
+          <RxCross2 size={20} className="text-baseTextColor" />
         </button>
       )}
     </div>

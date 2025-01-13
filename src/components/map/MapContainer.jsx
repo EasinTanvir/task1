@@ -17,7 +17,7 @@ const MapContainer = () => {
             are not valid in Wolt.
           </p>
         </div>
-        <h2 className="text-slate-700 font-semibold text-sm">
+        <h2 className="text-baseTextColor font-semibold text-sm">
           See similar stories
         </h2>
         <h2 className="text-primaryTextColor font-semibold text-sm">
@@ -26,7 +26,7 @@ const MapContainer = () => {
 
         <div className="flex md:flex-row flex-col gap-5 justify-between items-start  lg:w-[80%] w-full">
           <div className="md:border-l-2 md:ps-4 flex-1 ">
-            <p className="mt-1 text-slate-700 text-xl font-bold mb-4">
+            <p className="mt-1 text-baseTextColor text-xl font-bold mb-4">
               Address
             </p>
 
@@ -38,7 +38,7 @@ const MapContainer = () => {
           </div>
 
           <div className="md:border-l-2 md:ps-4 flex-1 pe-4">
-            <h3 className="mt-1 text-slate-700 text-xl font-bold mb-4">
+            <h3 className="mt-1 text-baseTextColor text-xl font-bold mb-4">
               Delivery times
             </h3>
             <ul className="mt-1 space-y-1 text-gray-700 text-sm">
@@ -88,8 +88,8 @@ const Breadcrumb = () => {
             <span
               className={`${
                 index !== breadcrumbs.length - 1
-                  ? "text-slate-600"
-                  : "text-black font-semibold"
+                  ? "text-baseTextColor"
+                  : "text-baseTextColor font-semibold"
               } font-medium`}
             >
               {crumb.label}

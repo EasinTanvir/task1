@@ -16,7 +16,7 @@ const ItemList = ({ title, image, id, selectItems, setSelectedItems }) => {
 
       <h3
         className={` text-xs font-semibold ${
-          isActive ? "text-primaryTextColor" : "text-slate-700"
+          isActive ? "text-primaryTextColor" : "text-baseTextColor"
         } `}
       >
         {title}

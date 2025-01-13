@@ -22,7 +22,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-black text-gray-400 custom-container md:pt-28 pt-16 pb-10 min-h-[450px]">
-      <div className="hidden md:flex flex-wrap  md:justify-between gap-16">
+      <div className="hidden md:flex flex-wrap lg:justify-between  gap-16">
         <div>
           <h3 className=" font-bold  text-4xl mb-2 text-white italic">Wolt</h3>
           <div className=" relative mt-6">

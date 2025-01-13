@@ -15,7 +15,7 @@ export const Badge = () => {
         className="object-cover"
         alt="badge"
       />
-      <span className="text-black text-sm font-medium">
+      <span className="text-baseTextColor text-sm font-medium">
         New users enjoy €0 delivery fees for 14 days after signing up
       </span>
     </div>
