@@ -9,8 +9,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        headerBg: "#252525",
-        customBackground: "#ffffff29",
+        cardHeaderBg: "#ffffff",
+        inputBg: "#ffffff29",
+        inputBgHover: "#ffffff47",
         buttonBg: "#008AC5",
         whiteTransparent: "rgba(255, 255, 255, 0.16)",
         textColor: "#009de0",
@@ -19,7 +20,6 @@ export default {
         bodyColor: "#fbfbfb",
       },
       backgroundImage: {
-        bannerImage: "url('/banner.avif')",
         gradientOverlay:
           "linear-gradient(180deg, rgba(0,0,0,0.61) 0%, rgba(0,0,0,0.41) 100%)",
       },

@@ -6,7 +6,7 @@ import Buttons from "./Buttons";
 import ItemList from "./ItemList";
 import { itemsData } from "@/utils/data";
 
-const AllItems = () => {
+const ListSideBar = () => {
   const [selectItems, setSelectedItems] = useState();
 
   return (
@@ -30,4 +30,4 @@ const AllItems = () => {
   );
 };
 
-export default AllItems;
+export default ListSideBar;

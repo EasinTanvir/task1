@@ -15,7 +15,7 @@ const Header = () => {
     <div
       ref={headerRef}
       className={`flex fixed left-0 top-0 w-full justify-between items-center md:h-20 h-28 custom-container z-40 ${
-        scroll || selectSearch ? "bg-white" : ""
+        scroll || selectSearch ? "bg-cardHeaderBg" : ""
       }`}
     >
       <div
@@ -71,7 +71,7 @@ const Header = () => {
         } rounded-xl  py-1.5 ${
           scroll
             ? "bg-gray-200 hover:bg-gray-300"
-            : "bg-[#ffffff29] hover:bg-[#ffffff47]"
+            : "bg-inputBg hover:bg-inputBgHover"
         } backdrop-blur-[8px] transition-all duration-300 ease-in-out`}
       >
         <input

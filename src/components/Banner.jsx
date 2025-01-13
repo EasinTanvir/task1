@@ -6,6 +6,8 @@ import { CiFaceSmile } from "react-icons/ci";
 import { BiTask } from "react-icons/bi";
 import { FaPersonCirclePlus } from "react-icons/fa6";
 
+import { bannerImage } from "@/utils/contant";
+
 const Banner = () => {
   return (
     <>
@@ -13,7 +15,7 @@ const Banner = () => {
         <Image
           fill
           className="inset-0 object-cover"
-          src="/banner.avif"
+          src={bannerImage}
           alt="Banner"
           priority
         />

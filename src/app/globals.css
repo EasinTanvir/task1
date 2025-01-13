@@ -2,16 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background-color: #fbfbfb;
-}
-
 @layer utilities {
   .flex-center {
     @apply flex justify-center items-center;
   }
   .custom-container {
-    @apply xl:px-16 lg:px-12 sm:px-8 px-4;
+    @apply 2xl:px-40 xl:px-20 lg:px-12 sm:px-8 px-4;
   }
 }
 

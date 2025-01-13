@@ -1,9 +1,9 @@
 "use client";
 import React from "react";
 import { FaChevronRight } from "react-icons/fa";
-import Map, { Marker } from "react-map-gl";
-import "mapbox-gl/dist/mapbox-gl.css";
+
 import { breadcrumbs } from "@/utils/data";
+import Maps from "./Maps";
 
 const MapContainer = () => {
   return (
@@ -67,17 +67,7 @@ const MapContainer = () => {
         </div>
 
         <div className="mt-6 w-full h-64 rounded-lg overflow-hidden">
-          {/* <Map
-            mapboxAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
-            initialViewState={{
-              latitude: 60.403,
-              longitude: 25.105,
-              zoom: 12,
-            }}
-            mapStyle="mapbox://styles/mapbox/streets-v11"
-          >
-            <Marker latitude={60.403} longitude={25.105} color="red" />
-          </Map> */}
+          <Maps />
         </div>
       </div>
       <Breadcrumb />
