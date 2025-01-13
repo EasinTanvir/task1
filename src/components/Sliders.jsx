@@ -43,7 +43,7 @@ const Sliders = ({ lists, title, isOrder = false }) => {
           {title}
         </h1>
         <div className="flex items-center gap-4">
-          {isOrder && <span className="text-blue"> See All</span>}
+          {isOrder && <span className="text-primaryTextColor"> See All</span>}
           <SwipperButton />
         </div>
       </div>

@@ -66,19 +66,19 @@ const Notify = () => {
             </span>
             <span className="text-sm">9.2</span>
           </div>
-          <button className="text-[13px] text-textColor font-semibold">
+          <button className="text-[13px] text-primaryTextColor font-semibold">
             More
           </button>
         </div>
       </div>
       <div className="flex items-center gap-4 flex-1 md:justify-end ">
-        <button className="bg-skyBlue text-textColor px-4 py-1.5 rounded-md text-sm flex-center gap-2 md:w-fit w-full ">
+        <button className="bg-primaryBg text-primaryTextColor px-4 py-1.5 rounded-md text-sm flex-center gap-2 md:w-fit w-full ">
           <span>
             <BiTask />
           </span>
           <span>Today at 11:45</span>
         </button>
-        <button className="bg-skyBlue text-textColor px-4 py-1.5 rounded-md text-sm flex-center gap-2 md:w-fit w-full">
+        <button className="bg-primaryBg text-primaryTextColor px-4 py-1.5 rounded-md text-sm flex-center gap-2 md:w-fit w-full">
           <span>
             <FaPersonCirclePlus />
           </span>

@@ -10,9 +10,9 @@ const Buttons = () => {
     <div className={`relative ${discover ? "md:mb-10" : ""}`}>
       <div
         onClick={() => setDiscover(!discover)}
-        className="md:bg-skyBlue md:border-none    border-b-[1px]  border-blue flex items-center gap-2 cursor-pointer text-textColor md:rounded-md px-2 py-2.5 w-full md:mt-4"
+        className="md:bg-primaryBg md:border-none    border-b-[1px]  border-primaryTextColor flex items-center gap-2 cursor-pointer text-primaryTextColor md:rounded-md px-2 py-2.5 w-full md:mt-4"
       >
-        <div className="bg-blue w-8 h-8 rounded-full md:flex-center hidden">
+        <div className="bg-primaryTextColor w-8 h-8 rounded-full md:flex-center hidden">
           <LuCloudLightning size={16} className="text-white" />
         </div>
         <button className="text-sm">Discover</button>
@@ -30,7 +30,7 @@ const Buttons = () => {
           onClick={() => setMostOrder(!mostOrder)}
           className={`${
             mostOrder
-              ? "bg-skyBlue text-textColor font-medium"
+              ? "bg-primaryBg text-primaryTextColor font-medium"
               : "bg-white text-gray-500 hover:bg-gray-100"
           } flex-center gap-2 cursor-pointer text-xs rounded-md px-2 py-1.5 w-full`}
         >

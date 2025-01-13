@@ -14,9 +14,8 @@ export default {
         inputBgHover: "#ffffff47",
         buttonBg: "#008AC5",
         whiteTransparent: "rgba(255, 255, 255, 0.16)",
-        textColor: "#009de0",
-        skyBlue: "#ccecf9",
-        blue: "#20A9E4",
+        primaryBg: "#ccecf9",
+        primaryTextColor: "#20A9E4",
         bodyColor: "#fbfbfb",
       },
       backgroundImage: {

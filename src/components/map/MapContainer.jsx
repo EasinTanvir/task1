@@ -20,7 +20,9 @@ const MapContainer = () => {
         <h2 className="text-slate-700 font-semibold text-sm">
           See similar stories
         </h2>
-        <h2 className="text-blue font-semibold text-sm">Grocery, K-Market</h2>
+        <h2 className="text-primaryTextColor font-semibold text-sm">
+          Grocery, K-Market
+        </h2>
 
         <div className="flex md:flex-row flex-col gap-5 justify-between items-start  lg:w-[80%] w-full">
           <div className="md:border-l-2 md:ps-4 flex-1 ">
@@ -30,7 +32,7 @@ const MapContainer = () => {
 
             <p className="text-gray-700 text-sm">Paasikivenkatu 13</p>
             <p className="text-gray-700 text-sm">04200 Kerava</p>
-            <a href="#" className="text-blue-500  mt-3 text-blue">
+            <a href="#" className="  mt-3 text-primaryTextColor">
               See map
             </a>
           </div>
@@ -59,8 +61,8 @@ const MapContainer = () => {
             <h3 className="text-gray-600 font-semibold text-lg">
               More information
             </h3>
-            <p className="text-blue-500  mt-3 text-blue">+358504138756</p>
-            <a href="#" className="text-blue-500  mt-3 text-blue">
+            <p className="text-primaryTextColor  mt-3">+358504138756</p>
+            <a href="#" className="text-primaryTextColor  mt-3 ">
               Visit website
             </a>
           </div>

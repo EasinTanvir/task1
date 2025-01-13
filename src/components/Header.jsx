@@ -34,18 +34,22 @@ const Header = () => {
           <div className="flex items-center gap-2 md:mt-0 mt-2">
             <button
               className={`${
-                scroll ? "bg-skyBlue" : "bg-white"
+                scroll ? "bg-primaryBg" : "bg-white"
               } bg-opacity-30 backdrop-blur-md rounded-full min-w-8 min-h-8 flex items-center justify-center`}
             >
               <IoLocation
                 size={16}
-                className={`${scroll ? "text-textColor" : "text-white"} z-20`}
+                className={`${
+                  scroll ? "text-primaryTextColor" : "text-white"
+                } z-20`}
               />
             </button>
             <div className="flex items-center gap-2">
               <button
                 className={`${
-                  scroll || selectSearch ? "text-textColor" : "text-white"
+                  scroll || selectSearch
+                    ? "text-primaryTextColor"
+                    : "text-white"
                 }`}
               >
                 Kerava
@@ -54,7 +58,9 @@ const Header = () => {
                 <RiArrowDropDownLine
                   size={20}
                   className={`${
-                    scroll || selectSearch ? "text-textColor" : "text-white"
+                    scroll || selectSearch
+                      ? "text-primaryTextColor"
+                      : "text-white"
                   }`}
                 />
               </button>
@@ -66,7 +72,7 @@ const Header = () => {
       <div
         className={`relative border ${
           selectSearch
-            ? "w-[65%] border-2 border-textColor"
+            ? "w-[65%] border-2 border-primaryTextColor"
             : "xl:w-96 border-none"
         } rounded-xl  py-1.5 ${
           scroll

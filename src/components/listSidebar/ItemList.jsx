@@ -8,7 +8,7 @@ const ItemList = ({ title, image, id, selectItems, setSelectedItems }) => {
       onClick={() => setSelectedItems(id)}
       className={`flex items-center gap-1 relative min-w-fit px-2 py-2 cursor-pointer md:rounded-md ${
         isActive
-          ? "md:bg-skyBlue  md:border-none  border-b-[1px] border-blue "
+          ? "md:bg-primaryBg  md:border-none  border-b-[1px] border-primaryTextColor "
           : ""
       }`}
     >
@@ -16,7 +16,7 @@ const ItemList = ({ title, image, id, selectItems, setSelectedItems }) => {
 
       <h3
         className={` text-xs font-semibold ${
-          isActive ? "text-blue" : "text-slate-700"
+          isActive ? "text-primaryTextColor" : "text-slate-700"
         } `}
       >
         {title}

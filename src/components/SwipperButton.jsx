@@ -21,25 +21,27 @@ const SwipperButton = () => {
       <button
         disabled={swiper.isBeginning}
         onClick={onPrevHandler}
-        className={`h-10 w-10 rounded-full bg-skyBlue flex-center ${
+        className={`h-10 w-10 rounded-full bg-primaryBg flex-center ${
           swiper.isBeginning ? "opacity-50 cursor-not-allowed" : ""
         }`}
       >
         <FaArrowLeftLong
           size={20}
-          className={swiper.isBeginning ? "text-gray-400" : "text-blue"}
+          className={
+            swiper.isBeginning ? "text-gray-400" : "text-primaryTextColor"
+          }
         />
       </button>
       <button
         disabled={swiper.isEnd}
         onClick={onNextHandler}
-        className={`h-10 w-10 rounded-full bg-skyBlue flex-center ${
+        className={`h-10 w-10 rounded-full bg-primaryBg flex-center ${
           swiper.isEnd ? "opacity-50 cursor-not-allowed" : ""
         }`}
       >
         <FaArrowRightLong
           size={20}
-          className={swiper.isEnd ? "text-gray-400" : "text-blue"}
+          className={swiper.isEnd ? "text-gray-400" : "text-primaryTextColor"}
         />
       </button>
     </div>
