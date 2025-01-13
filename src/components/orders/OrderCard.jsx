@@ -9,7 +9,7 @@ const OrderCard = ({ title, image, price }) => {
         <AiOutlinePlus className="text-primaryTextColor" size={24} />
       </button>
 
-      <Image src={image} className="object-cover" alt={title} />
+      <Image src={image} className="object-cover pt-2.5" alt={title} />
 
       <div className="mt-6">
         <span className="text-primaryTextColor text-sm font-semibold">
