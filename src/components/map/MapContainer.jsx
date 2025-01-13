@@ -8,67 +8,78 @@ import Maps from "./Maps";
 const MapContainer = () => {
   return (
     <div>
-      <div className="flex flex-col  bg-gray-100 custom-container py-10 rounded-lg   w-full mx-auto">
-        <div className=" mb-4">
-          <p className="text-gray-700  xl:w-[50%] md:w-[70%] ">
-            Get your groceries home delivered from our wide selection! Collect
-            Plussa points from your orders. Please always check the product
-            information on the sales packaging. Brick-and-mortar store offers
-            are not valid in Wolt.
-          </p>
-        </div>
-        <h2 className="text-baseTextColor font-semibold text-sm">
-          See similar stories
-        </h2>
-        <h2 className="text-primaryTextColor font-semibold text-sm">
-          Grocery, K-Market
-        </h2>
-
-        <div className="flex md:flex-row flex-col gap-5 justify-between items-start  lg:w-[80%] w-full">
-          <div className="md:border-l-2 md:ps-4 flex-1 ">
-            <p className="mt-1 text-baseTextColor text-xl font-bold mb-4">
-              Address
+      <div className="bg-gray-100 rounded-lg w-full">
+        <div className="p-5">
+          <div className="mb-4">
+            <p className="text-gray-700 xl:w-[50%] md:w-[70%]">
+              Get your groceries home delivered from our wide selection! Collect
+              Plussa points from your orders. Please always check the product
+              information on the sales packaging. Brick-and-mortar store offers
+              are not valid in Wolt.
             </p>
-
-            <p className="text-gray-700 text-sm">Paasikivenkatu 13</p>
-            <p className="text-gray-700 text-sm">04200 Kerava</p>
-            <a href="#" className="  mt-3 text-primaryTextColor">
-              See map
-            </a>
           </div>
+          <h2 className="text-baseTextColor font-semibold text-sm">
+            See similar stories
+          </h2>
+          <h2 className="text-primaryTextColor font-semibold text-sm">
+            Grocery, K-Market
+          </h2>
 
-          <div className="md:border-l-2 md:ps-4 flex-1 pe-4">
-            <h3 className="mt-1 text-baseTextColor text-xl font-bold mb-4">
-              Delivery times
-            </h3>
-            <ul className="mt-1 space-y-1 text-gray-700 text-sm">
-              <div className="flex justify-between items-center">
-                <span>Monday:</span>
-                <span>09:00–20:00</span>
-              </div>
-              <div className="flex justify-between items-center">
-                <span>Monday:</span>
-                <span>09:00–20:00</span>
-              </div>
-              <div className="flex justify-between items-center">
-                <span>Monday:</span>
-                <span>09:00–20:00</span>
-              </div>
-            </ul>
-          </div>
+          <div className="flex md:flex-row flex-col gap-5 justify-between items-start lg:w-[90%] w-full">
+            <div className="md:border-l-2 md:ps-4 flex-1">
+              <p className="mt-1 text-baseTextColor text-xl font-bold mb-4">
+                Address
+              </p>
+              <p className="text-gray-700 text-sm">Paasikivenkatu 13</p>
+              <p className="text-gray-700 text-sm">04200 Kerava</p>
+              <span className="mt-3 text-primaryTextColor">See map</span>
+            </div>
 
-          <div className="md:border-l-2 md:ps-4 flex-1">
-            <h3 className="text-gray-600 font-semibold text-lg">
-              More information
-            </h3>
-            <p className="text-primaryTextColor  mt-3">+358504138756</p>
-            <a href="#" className="text-primaryTextColor  mt-3 ">
-              Visit website
-            </a>
+            <div className="md:border-l-2  md:border-r-2 md:ps-4 flex-1 pe-4">
+              <h3 className="mt-1 text-baseTextColor text-xl font-bold mb-4">
+                Delivery times
+              </h3>
+              <ul className="mt-1 space-y-1 text-gray-700 text-sm">
+                <div className="flex justify-between items-center">
+                  <span>Monday:</span>
+                  <span>09:00–20:00</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span>Monday:</span>
+                  <span>09:00–20:00</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span>Monday:</span>
+                  <span>09:00–20:00</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span>Monday:</span>
+                  <span>09:00–20:00</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span>Monday:</span>
+                  <span>09:00–20:00</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span>Monday:</span>
+                  <span>09:00–20:00</span>
+                </div>
+              </ul>
+            </div>
+
+            <div className=" md:ps-4 flex-1">
+              <h3 className="text-gray-600 text-xl font-bold">
+                More information
+              </h3>
+              <p className="text-primaryTextColor mt-3">+358504138756</p>
+              <span className="text-primaryTextColor mt-3">Visit website</span>
+            </div>
           </div>
         </div>
 
-        <div className="mt-6 w-full h-64 rounded-lg overflow-hidden">
+        <div className="relative mt-14 w-full h-64 rounded-lg overflow-hidden">
+          <div className="absolute top-0 left-0 w-full h-24 bg-map-gradient pointer-events-none z-10"></div>
+
           <Maps />
         </div>
       </div>

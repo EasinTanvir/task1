@@ -22,6 +22,8 @@ export default {
       backgroundImage: {
         gradientOverlay:
           "linear-gradient(180deg, rgba(0,0,0,0.61) 0%, rgba(0,0,0,0.41) 100%)",
+        "map-gradient":
+          "linear-gradient(to bottom, #f3f4f6, rgba(255, 255, 255, 0.6), transparent)",
       },
     },
   },
