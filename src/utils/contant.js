@@ -35,6 +35,20 @@ import banner4 from "../assets/banners/54.avif";
 
 import deliveryBoy from "../assets/parcell.avif";
 
+import week1 from "../assets/weeks/best1.avif";
+import week2 from "../assets/weeks/best2.avif";
+import week3 from "../assets/weeks/best3.avif";
+import week4 from "../assets/weeks/best4.png";
+import week5 from "../assets/weeks/best5.png";
+import week6 from "../assets/weeks/best6.png";
+
+import delivery1 from "../assets/delivery/d1.avif";
+import delivery2 from "../assets/delivery/d2.avif";
+import delivery3 from "../assets/delivery/d3.avif";
+import delivery4 from "../assets/delivery/d4.avif";
+import delivery5 from "../assets/delivery/d5.avif";
+import delivery6 from "../assets/delivery/d6.avif";
+
 export {
   bannerImage,
   image1,
@@ -67,4 +81,16 @@ export {
   banner3,
   banner4,
   deliveryBoy,
+  week1,
+  week2,
+  week3,
+  week4,
+  week5,
+  week6,
+  delivery1,
+  delivery2,
+  delivery3,
+  delivery4,
+  delivery5,
+  delivery6,
 };

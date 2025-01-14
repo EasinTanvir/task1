@@ -41,7 +41,7 @@ const Header = () => {
         >
           Wolt
         </Link>
-        {(!selectSearch || isBasePath) && (
+        {!selectSearch && (
           <div className="flex items-center gap-2 md:mt-0 mt-2">
             <button
               className={`${

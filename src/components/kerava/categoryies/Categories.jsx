@@ -16,7 +16,7 @@ const Categories = () => {
   } = useCategories(categoryLists);
 
   return (
-    <div className="mt-16 lg:flex flex-wrap justify-center gap-5 hidden">
+    <div className="mt-16 lg:flex flex-wrap xl:justify-center gap-5 hidden">
       <div className="flex gap-5 ">
         {firstCategories.map((item, i) => (
           <CategoryItems key={i} {...item} />

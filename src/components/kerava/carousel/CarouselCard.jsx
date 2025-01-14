@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const CarouselCard = ({ title, subtitle, image }) => {
   return (
-    <div className="w-full aspect-[2] rounded-lg relative overflow-hidden group">
+    <div className="w-full aspect-[1.70] rounded-lg relative overflow-hidden group">
       <motion.div
         whileHover={{ scale: 1.05 }}
         transition={{ duration: 0.5 }}

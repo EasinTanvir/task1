@@ -30,6 +30,18 @@ import {
   banner3,
   banner4,
   bannerImage,
+  week1,
+  week2,
+  week3,
+  week4,
+  week5,
+  week6,
+  delivery1,
+  delivery2,
+  delivery3,
+  delivery4,
+  delivery5,
+  delivery6,
 } from "./contant";
 
 export const itemsData = [
@@ -371,5 +383,119 @@ export const carouselItems = [
     title: "Member offers up to -40%",
     subtitle: "Wolt+ Weeks are back 💙",
     image: banner4,
+  },
+];
+
+export const bestOfWeeksSpecial = [
+  {
+    title: "30% off on selected items",
+
+    image: week2,
+  },
+  {
+    title: "30% off on selected items",
+    image: week3,
+  },
+];
+export const bestOfWeeks = [
+  {
+    image: week4,
+  },
+  {
+    image: week5,
+  },
+  {
+    image: week6,
+  },
+];
+
+export const dinnerCards = [
+  {
+    id: 1,
+    title: "McDonald's Kerava",
+    subtitle: "I'm lovin' it",
+    price: 0.0,
+    priceCategory: "€€€€",
+    rating: 8.4,
+    deliveryTime: "15-25 min",
+    badgeText: "14 days of €0 delivery fees",
+    image: delivery1,
+  },
+  {
+    id: 2,
+    title: "Burger King Helsinki",
+    subtitle: "Taste is King",
+    price: 1.0,
+    priceCategory: "€€€",
+    rating: 8.6,
+    deliveryTime: "20-30 min",
+    badgeText: "7 days of €0 delivery fees",
+    image: delivery2,
+  },
+  {
+    id: 3,
+    title: "Subway Espoo",
+    subtitle: "Eat Fresh",
+    price: 0.5,
+    priceCategory: "€€",
+    rating: 8.2,
+    deliveryTime: "10-15 min",
+    badgeText: "10 days of €0 delivery fees",
+    image: delivery3,
+  },
+  {
+    id: 4,
+    title: "KFC Vantaa",
+    subtitle: "Finger Lickin' Good",
+    price: 2.5,
+    priceCategory: "€€€",
+    rating: 9.0,
+    deliveryTime: "25-35 min",
+    badgeText: "5 days of €0 delivery fees",
+    image: delivery4,
+  },
+  {
+    id: 5,
+    title: "Pizza Hut Tampere",
+    subtitle: "Make it Great",
+    price: 3.0,
+    priceCategory: "€€€€",
+    rating: 8.8,
+    deliveryTime: "30-40 min",
+    badgeText: "3 days of €0 delivery fees",
+    image: delivery5,
+  },
+  {
+    id: 6,
+    title: "Hesburger Turku",
+    subtitle: "A Finnish Favorite",
+    price: 1.5,
+    priceCategory: "€€",
+    rating: 8.3,
+    deliveryTime: "15-20 min",
+    badgeText: "12 days of €0 delivery fees",
+    image: delivery6,
+  },
+  {
+    id: 7,
+    title: "Domino's Pizza Oulu",
+    subtitle: "Pizza Delivery Experts",
+    price: 2.0,
+    priceCategory: "€€€",
+    rating: 8.7,
+    deliveryTime: "20-25 min",
+    badgeText: "8 days of €0 delivery fees",
+    image: delivery2,
+  },
+  {
+    id: 8,
+    title: "Taco Bell Lahti",
+    subtitle: "Live Más",
+    price: 1.0,
+    priceCategory: "€€",
+    rating: 8.5,
+    deliveryTime: "15-20 min",
+    badgeText: "6 days of €0 delivery fees",
+    image: delivery3,
   },
 ];

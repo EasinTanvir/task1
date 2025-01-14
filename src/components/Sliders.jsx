@@ -7,8 +7,9 @@ import "swiper/css/navigation";
 import SwipperButton from "./SwipperButton";
 import CategoryCard from "./landingPage/categories/CategoryCard";
 import OrderCard from "./landingPage/orders/OrderCard";
+import DinnerCard from "./kerava/dinners/DinnerCard";
 
-const Sliders = ({ lists, title, isOrder = false }) => {
+const Sliders = ({ lists, title, isOrder = false, isDinner = false }) => {
   return (
     <Swiper
       style={{ display: "flex", flexDirection: "column-reverse" }}
@@ -51,10 +52,20 @@ const Sliders = ({ lists, title, isOrder = false }) => {
         <SwiperSlide
           key={i}
           className={`${
-            isOrder ? "sm:max-w-72 max-w-56" : "sm:max-w-60 max-w-48  "
+            isOrder
+              ? "sm:max-w-72 max-w-56"
+              : isDinner
+              ? "lg:min-w-[420px] lg:max-w-[420px] min-w-80 max-w-80"
+              : "sm:max-w-60 max-w-48  "
           }`}
         >
-          {isOrder ? <OrderCard {...item} /> : <CategoryCard {...item} />}
+          {isOrder ? (
+            <OrderCard {...item} />
+          ) : isDinner ? (
+            <DinnerCard {...item} />
+          ) : (
+            <CategoryCard {...item} />
+          )}
         </SwiperSlide>
       ))}
     </Swiper>

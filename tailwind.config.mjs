@@ -31,6 +31,7 @@ export default {
         bodyColor: "#fbfbfb",
         categoryBg: "#f5f6f5",
         badgeColor: "#02AECF",
+        weekCardColor: "#f6f6f6",
       },
       backgroundImage: {
         gradientOverlay:

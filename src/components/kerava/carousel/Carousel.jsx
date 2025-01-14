@@ -22,6 +22,7 @@ const Carousel = ({}) => {
       spaceBetween={20}
       className="relative mt-14"
       loop
+      speed={1000}
       breakpoints={{
         1024: {
           slidesPerView: 2,

@@ -4,7 +4,7 @@ import React from "react";
 
 const DeliverBadge = () => {
   return (
-    <div className="bg-badgeColor  text-white rounded-2xl lg:h-28 sm:min-h-40  h-72  flex justify-between items-center lg:px-12 px-6 mt-32 relative">
+    <div className="bg-badgeColor  text-white rounded-2xl lg:h-24 sm:min-h-40  h-72  flex justify-between items-center lg:px-12 px-6 lg:mt-32 mt-12 relative">
       <div className="lg:flex  items-center">
         <h3 className="italic lg:static absolute right-20 top-5  text-4xl font-bold">
           Wolk+
