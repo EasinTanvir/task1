@@ -5,7 +5,7 @@ import { tabItems } from "@/utils/data";
 
 const TabList = () => {
   return (
-    <div className="flex-center gap-6">
+    <div className="md:flex-center hidden gap-6">
       {tabItems.map((item, i) => (
         <TabItems key={i} {...item} />
       ))}

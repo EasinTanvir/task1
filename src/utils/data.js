@@ -25,6 +25,11 @@ import {
   icon6,
   icon7,
   icon8,
+  banner1,
+  banner2,
+  banner3,
+  banner4,
+  bannerImage,
 } from "./contant";
 
 export const itemsData = [
@@ -345,4 +350,26 @@ export const tabItems = [
   { title: "Discovery", icon: TbMapDiscount, href: "/kerava" },
   { title: "Restaurants", icon: MdOutlineRestaurant, href: "/restaurants" },
   { title: "Stores", icon: TbBuildingStore, href: "/stores" },
+];
+export const carouselItems = [
+  {
+    title: "It's Taco Tuesday!",
+    subtitle: "Find the best mexican restaurants in your area",
+    image: bannerImage,
+  },
+  {
+    title: "Keravan Pizza Napoli",
+    subtitle: "Kebabit, pizzat ja muut herkut",
+    image: banner2,
+  },
+  {
+    title: "K-Market and K-Supermarket",
+    subtitle: "Order groceries and collect Plussa points!",
+    image: banner3,
+  },
+  {
+    title: "Member offers up to -40%",
+    subtitle: "Wolt+ Weeks are back 💙",
+    image: banner4,
+  },
 ];
