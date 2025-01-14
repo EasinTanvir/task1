@@ -1,6 +1,5 @@
-import { week1, week5 } from "@/utils/contant";
-import Image from "next/image";
 import React from "react";
+import Image from "next/image";
 
 const RegularCard = ({ image }) => {
   return (

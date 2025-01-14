@@ -7,7 +7,7 @@ import { IoLocationSharp } from "react-icons/io5";
 import { BiWorld } from "react-icons/bi";
 import { MdDarkMode } from "react-icons/md";
 
-import { playstore } from "@/utils/contant";
+import { playstore } from "@/utils/constant";
 import { footerData } from "@/utils/data";
 
 const Footer = () => {

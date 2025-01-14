@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-import { percentage } from "@/utils/contant";
+import { percentage } from "@/utils/constant";
 
 export const Badge = () => {
   return (

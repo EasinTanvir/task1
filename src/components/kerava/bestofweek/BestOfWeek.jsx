@@ -1,7 +1,8 @@
 import React from "react";
+
 import SpecialCard from "./SpecialCard";
-import { bestOfWeeks, bestOfWeeksSpecial } from "@/utils/data";
 import RegularCard from "./RegularCard";
+import { bestOfWeeks, bestOfWeeksSpecial } from "@/utils/data";
 
 const BestOfWeek = () => {
   return (

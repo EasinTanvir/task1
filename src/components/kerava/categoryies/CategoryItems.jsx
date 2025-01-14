@@ -1,5 +1,5 @@
-import Image from "next/image";
 import React, { useState } from "react";
+import Image from "next/image";
 
 const CategoryItems = ({ title, image }) => {
   const [isHovered, setIsHovered] = useState(false);

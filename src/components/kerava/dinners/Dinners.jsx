@@ -1,5 +1,5 @@
 import React from "react";
-import DinnerCard from "./DinnerCard";
+
 import Sliders from "@/components/Sliders";
 import { dinnerCards } from "@/utils/data";
 

@@ -1,4 +1,4 @@
-import { banner1, delivery1 } from "@/utils/contant";
+import { banner1, delivery1 } from "@/utils/constant";
 import Image from "next/image";
 import React from "react";
 import { CiFaceSmile } from "react-icons/ci";
@@ -14,7 +14,11 @@ const DinnerCard = ({
   image,
 }) => {
   return (
-    <div className=" lg:w-[420px] w-80  h-80 shadow-lg relative rounded-lg cursor-pointer hover:scale-105 transition-all duration-200">
+    <div className=" lg:w-[420px] max-h-80  w-80  shadow-lg relative rounded-lg cursor-pointer hover:scale-105 transition-all duration-200">
+      <div className="bg-primaryTextColor text-white px-3 py-1 rounded-md absolute left-5 top-5 w-fit z-40 text-sm">
+        {badgeText}
+      </div>
+
       <div>
         <Image
           alt="title"
@@ -28,7 +32,7 @@ const DinnerCard = ({
           <h4 className="text-slate-500 text-md">{subtitle}</h4>
         </div>
         <div className="bg-primaryBg flex-center flex-col text-sm text-primaryTextColor px-4  py-2 rounded-lg">
-          <span>15-25 </span>
+          <span>{deliveryTime}</span>
           <span>min</span>
         </div>
       </div>
@@ -37,12 +41,12 @@ const DinnerCard = ({
         <span className="bg-primaryTextColor  rounded-md  p-0.5 text-white">
           w+
         </span>
-        <span className="text-primaryTextColor">€ 450</span>
-        <span className="text-slate-500">€€€€</span>
+        <span className="text-primaryTextColor">€ {price}</span>
+        <span className="text-slate-500">{priceCategory}</span>
         <span>
           <CiFaceSmile className="text-baseTextColor" />
         </span>
-        <span className="text-baseTextColor">8.4</span>
+        <span className="text-baseTextColor">{rating}</span>
       </div>
     </div>
   );

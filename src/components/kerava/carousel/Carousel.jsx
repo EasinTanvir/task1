@@ -9,7 +9,7 @@ import CarouselCard from "./CarouselCard";
 import CarouselButton from "./CarouselButton";
 import { carouselItems } from "@/utils/data";
 
-const Carousel = ({}) => {
+const Carousel = () => {
   return (
     <Swiper
       grabCursor={true}

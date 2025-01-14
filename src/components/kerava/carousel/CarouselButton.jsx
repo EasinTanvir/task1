@@ -17,15 +17,15 @@ const CarouselButton = () => {
     <>
       <button
         onClick={onPrevHandler}
-        className="h-10 w-10 rounded-full bg-primaryBg flex-center absolute left-0 top-0 bottom-0 my-auto  z-40"
+        className="h-14 w-14 rounded-full bg-primaryBg flex-center absolute left-0 top-0 bottom-0 my-auto  z-40"
       >
-        <FaArrowLeftLong size={20} className="text-primaryTextColor" />
+        <FaArrowLeftLong size={25} className="text-primaryTextColor" />
       </button>
       <button
         onClick={onNextHandler}
-        className="h-10 w-10 rounded-full bg-primaryBg flex-center absolute right-0 top-0 bottom-0 my-auto  z-40"
+        className="h-14 w-14 rounded-full bg-primaryBg flex-center absolute right-0 top-0 bottom-0 my-auto  z-40"
       >
-        <FaArrowRightLong size={20} className="text-primaryTextColor" />
+        <FaArrowRightLong size={25} className="text-primaryTextColor" />
       </button>
     </>
   );

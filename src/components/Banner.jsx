@@ -6,7 +6,7 @@ import { CiFaceSmile } from "react-icons/ci";
 import { BiTask } from "react-icons/bi";
 import { FaPersonCirclePlus } from "react-icons/fa6";
 
-import { bannerImage } from "@/utils/contant";
+import { bannerImage } from "@/utils/constant";
 
 const Banner = () => {
   return (
