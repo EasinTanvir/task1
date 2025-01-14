@@ -5,8 +5,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 import SwipperButton from "./SwipperButton";
-import CategoryCard from "./categories/CategoryCard";
-import OrderCard from "./orders/OrderCard";
+import CategoryCard from "./landingPage/categories/CategoryCard";
+import OrderCard from "./landingPage/orders/OrderCard";
 
 const Sliders = ({ lists, title, isOrder = false }) => {
   return (

@@ -19,6 +19,20 @@ import playstore from "../assets/playstore.png";
 
 import percentage from "../assets/deal.avif";
 
+import icon1 from "../assets/icons/101.avif";
+import icon2 from "../assets/icons/102.avif";
+import icon3 from "../assets/icons/103.avif";
+import icon4 from "../assets/icons/104.avif";
+import icon5 from "../assets/icons/105.avif";
+import icon6 from "../assets/icons/106.avif";
+import icon7 from "../assets/icons/107.avif";
+import icon8 from "../assets/icons/108.avif";
+
+import banner1 from "../assets/banners/50.avif";
+import banner2 from "../assets/banners/51.avif";
+import banner3 from "../assets/banners/53.avif";
+import banner4 from "../assets/banners/54.avif";
+
 export {
   bannerImage,
   image1,
@@ -38,4 +52,16 @@ export {
   image14,
   image15,
   playstore,
+  icon1,
+  icon2,
+  icon3,
+  icon4,
+  icon5,
+  icon6,
+  icon7,
+  icon8,
+  banner1,
+  banner2,
+  banner3,
+  banner4,
 };

@@ -18,6 +18,7 @@ export default {
         primaryTextColor: "#20A9E4",
         baseTextColor: "rgb(51 65 85)",
         bodyColor: "#fbfbfb",
+        iconColor: "#f5f6f5",
       },
       backgroundImage: {
         gradientOverlay:

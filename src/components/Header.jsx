@@ -7,6 +7,7 @@ import { RxCross2 } from "react-icons/rx";
 
 import Avatar from "./Avatar";
 import useHeaderLogic from "@/hooks/useHeaderLogic";
+import Link from "next/link";
 
 const Header = () => {
   const { scroll, selectSearch, setSelectSearch, headerRef } = useHeaderLogic();
@@ -45,7 +46,8 @@ const Header = () => {
               />
             </button>
             <div className="flex items-center gap-2">
-              <button
+              <Link
+                href="/kerava"
                 className={`${
                   scroll || selectSearch
                     ? "text-primaryTextColor"
@@ -53,7 +55,7 @@ const Header = () => {
                 }`}
               >
                 Kerava
-              </button>
+              </Link>
               <button>
                 <RiArrowDropDownLine
                   size={20}

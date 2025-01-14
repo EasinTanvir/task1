@@ -1,10 +1,10 @@
 import React from "react";
 
+import MapContainer from "@/components/landingPage/map/MapContainer";
+import ListSideBar from "@/components/landingPage/listSidebar/ListSideBar";
 import Banner from "@/components/Banner";
-import Orders from "@/components/orders/Orders";
-import Categories from "@/components/categories/Categories";
-import MapContainer from "@/components/map/MapContainer";
-import ListSideBar from "@/components/listSidebar/ListSideBar";
+import Categories from "@/components/landingPage/categories/Categories";
+import Orders from "@/components/landingPage/orders/Orders";
 
 const HomePage = () => {
   return (

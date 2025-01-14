@@ -2,7 +2,7 @@ import React from "react";
 
 import { BadgeTwo, Badge } from "./Badges";
 import { ordersData } from "@/utils/data";
-import Sliders from "../Sliders";
+import Sliders from "@/components/Sliders";
 
 const Orders = () => {
   return (
