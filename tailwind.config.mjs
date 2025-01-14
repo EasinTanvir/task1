@@ -8,6 +8,17 @@ export default {
   ],
   theme: {
     extend: {
+      keyframes: {
+        bounceBack: {
+          "0%": { transform: "translateY(-6px)" },
+          "50%": { transform: "translateY(5px)" },
+          "100%": { transform: "translateY(0)" },
+        },
+      },
+      animation: {
+        bounceBack: "bounceBack 0.4s ease-out",
+      },
+
       colors: {
         cardHeaderBg: "#ffffff",
         inputBg: "#ffffff29",
@@ -18,7 +29,7 @@ export default {
         primaryTextColor: "#20A9E4",
         baseTextColor: "rgb(51 65 85)",
         bodyColor: "#fbfbfb",
-        iconColor: "#f5f6f5",
+        categoryBg: "#f5f6f5",
       },
       backgroundImage: {
         gradientOverlay:

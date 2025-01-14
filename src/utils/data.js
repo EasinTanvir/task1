@@ -1,3 +1,6 @@
+import { TbMapDiscount } from "react-icons/tb";
+import { MdOutlineRestaurant } from "react-icons/md";
+import { TbBuildingStore } from "react-icons/tb";
 import {
   image1,
   image2,
@@ -14,6 +17,14 @@ import {
   image13,
   image14,
   image15,
+  icon1,
+  icon2,
+  icon3,
+  icon4,
+  icon5,
+  icon6,
+  icon7,
+  icon8,
 } from "./contant";
 
 export const itemsData = [
@@ -318,4 +329,20 @@ export const breadcrumbs = [
   { label: "Stores and groceries" },
   { label: "K-Market" },
   { label: "K-Market Keravan Asema" },
+];
+
+export const categoryLists = [
+  { title: "Restaurants", image: icon1 },
+  { title: "Grocery", image: icon2 },
+  { title: "Pharmacies", image: icon3 },
+  { title: "Pet Supply", image: icon4 },
+  { title: "Electronics", image: icon5 },
+  { title: "Home & DIY", image: icon6 },
+  { title: "Flowers", image: icon7 },
+  { title: "Other Stores", image: icon8 },
+];
+export const tabItems = [
+  { title: "Discovery", icon: TbMapDiscount, href: "/kerava" },
+  { title: "Restaurants", icon: MdOutlineRestaurant, href: "/restaurants" },
+  { title: "Stores", icon: TbBuildingStore, href: "/stores" },
 ];
