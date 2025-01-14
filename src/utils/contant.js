@@ -33,6 +33,8 @@ import banner2 from "../assets/banners/51.avif";
 import banner3 from "../assets/banners/53.avif";
 import banner4 from "../assets/banners/54.avif";
 
+import deliveryBoy from "../assets/parcell.avif";
+
 export {
   bannerImage,
   image1,
@@ -64,4 +66,5 @@ export {
   banner2,
   banner3,
   banner4,
+  deliveryBoy,
 };

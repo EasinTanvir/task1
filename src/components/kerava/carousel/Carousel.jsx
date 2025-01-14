@@ -18,16 +18,16 @@ const Carousel = ({}) => {
       }}
       modules={[Autoplay]}
       scrollbar={{ draggable: true }}
-      slidesPerView={2} // Default value
+      slidesPerView={2}
       spaceBetween={20}
       className="relative mt-14"
       loop
       breakpoints={{
         1024: {
-          slidesPerView: 2, // For screens >= 1024px
+          slidesPerView: 2,
         },
         0: {
-          slidesPerView: 1, // For screens < 1024px
+          slidesPerView: 1,
         },
       }}
     >
@@ -36,7 +36,9 @@ const Carousel = ({}) => {
           <CarouselCard {...item} />
         </SwiperSlide>
       ))}
-      <CarouselButton />
+      <div className="lg:block hidden">
+        <CarouselButton />
+      </div>
     </Swiper>
   );
 };

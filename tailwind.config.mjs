@@ -30,6 +30,7 @@ export default {
         baseTextColor: "rgb(51 65 85)",
         bodyColor: "#fbfbfb",
         categoryBg: "#f5f6f5",
+        badgeColor: "#02AECF",
       },
       backgroundImage: {
         gradientOverlay:

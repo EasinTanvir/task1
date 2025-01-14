@@ -2,6 +2,7 @@ import React from "react";
 import TabList from "@/components/kerava/tabs/TabList";
 import Categories from "@/components/kerava/categoryies/Categories";
 import Carousel from "@/components/kerava/carousel/Carousel";
+import DeliverBadge from "@/components/kerava/DeliverBadge";
 
 const Kerava = () => {
   return (
@@ -9,6 +10,7 @@ const Kerava = () => {
       <TabList />
       <Categories />
       <Carousel />
+      <DeliverBadge />
     </div>
   );
 };
